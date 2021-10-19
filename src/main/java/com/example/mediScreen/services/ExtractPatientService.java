@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class PatientService {
+public class ExtractPatientService {
 
     @Autowired
     private PatientRepository patientRepository;
@@ -17,7 +17,7 @@ public class PatientService {
         return patientRepository.findById(id);
     }
 
-    public void addPatient(Patient patient){
-        patientRepository.save(patient);
+    public Patient addPatient(Patient patient){
+        return patientRepository.save(patient);
     }
 }

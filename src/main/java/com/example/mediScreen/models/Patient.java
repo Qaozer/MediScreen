@@ -24,7 +24,7 @@ public class Patient {
 
     @NotNull
     @Column(name = "dob")
-    private Date dateOfBirth;
+    private String dateOfBirth;
 
     @NotNull
     private String sex;
@@ -35,7 +35,7 @@ public class Patient {
     public Patient(){
     }
 
-    public Patient(String family, String phone, String address, Date dateOfBirth, String sex, String given) {
+    public Patient(String family, String phone, String address, String dateOfBirth, String sex, String given) {
         this.family = family;
         this.phone = phone;
         this.address = address;
@@ -76,11 +76,11 @@ public class Patient {
         this.address = address;
     }
 
-    public Date getDateOfBirth() {
+    public String getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(String dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 

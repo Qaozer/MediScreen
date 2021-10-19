@@ -1,7 +1,7 @@
 package com.example.mediScreen.controllers;
 
 import com.example.mediScreen.models.Patient;
-import com.example.mediScreen.services.PatientService;
+import com.example.mediScreen.services.ExtractPatientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-public class PatientController {
+public class ExtractPatientController {
 
     @Autowired
-    private PatientService patientService;
+    private ExtractPatientService patientService;
 
     @GetMapping(value = "patient/{id}/")
     public ResponseEntity getPatientById(@PathVariable("id") Integer id){

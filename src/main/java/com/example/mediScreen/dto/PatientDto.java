@@ -5,7 +5,7 @@ import java.util.Date;
 public class PatientDto {
     private String family;
     private String address;
-    private Date dob;
+    private String dob;
     private String sex;
     private String phone;
     private String given;
@@ -28,11 +28,11 @@ public class PatientDto {
         this.address = address;
     }
 
-    public Date getDob() {
+    public String getDob() {
         return dob;
     }
 
-    public void setDob(Date dob) {
+    public void setDob(String dob) {
         this.dob = dob;
     }
 
