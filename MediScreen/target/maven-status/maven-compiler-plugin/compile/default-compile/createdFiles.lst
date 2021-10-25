@@ -1,0 +1,6 @@
+com\example\mediScreen\MediScreenApplication.class
+com\example\mediScreen\services\ExtractPatientService.class
+com\example\mediScreen\controllers\ExtractPatientController.class
+com\example\mediScreen\dto\PatientDto.class
+com\example\mediScreen\models\Patient.class
+com\example\mediScreen\repositories\PatientRepository.class
